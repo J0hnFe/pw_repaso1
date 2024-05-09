@@ -1,0 +1,115 @@
+/* uso combinacion de selectores */
+/* combinacion jerarquica de selectores: li hijo de menu*/
+.menu li {
+    list-style: none;
+    /* quita lista */
+    display: inline-block;
+    /* pone en linea */
+    /* margin: 10px; /* margen */
+    margin: 5px 10px;
+    /* margenes se aplican en sentido horario */
+    /* Otras formas
+    margin: 10px 20px 30px 40px; 
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    */
+    border: 1px solid black;
+    /* borde */
+    padding: 10px;
+    /* relleno */
+    font-family: Victor Mono;
+    font-size: 20px;
+}
+
+.menu {
+    background: #74E291;
+    padding: 5px 10px;
+    border: 5px solid #211C6A;
+    text-align: left;
+    text-align: center;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    text-align: center;
+    background: #211C6A;
+}
+
+.agrupar {
+    border: 1px solid black;
+    background: #59B4C3;
+    width: 900px;
+    margin: 20px auto;
+}
+
+.cabecera {
+    background: #59B4C3;
+    border: 5px solid #211C6A;
+    padding: 20px; /* distancia desde el borde */
+
+}
+
+.seccion {
+    width: 600px;
+    margin: 10px;
+    float: left;
+}
+
+#id_articulo_1, #id_articulo_2 {
+    background: #EFF396;
+    border: 7px solid #211C6A;
+    padding: 20px;
+    margin: 10px;
+    text-align: justify;
+}
+
+article footer {
+    text-align: right;
+}
+
+.referencias {
+    width: 200px;
+    float: right;
+    margin: 30px 35px;
+    padding-left: 2px;
+}
+
+/* siempre el pie de la pg (no el de cualquier elemento) debe tener clear both */
+.pie {
+    clear: both;
+}
+
+blockquote {
+    border: 5px solid #211C6A;
+    padding: 10px;
+    background: #74E291;
+    width: 150px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    margin: auto auto;
+}
+
+/* selector combinado */
+/*
+.menu, li{
+    color: red;
+}
+
+li{
+    background-color: yellow;
+}
+*/
