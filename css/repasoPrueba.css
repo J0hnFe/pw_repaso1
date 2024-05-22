@@ -8,7 +8,10 @@
 }
 
 header {
-    font-size: 40px;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
 }
 
 .img {
@@ -43,5 +46,5 @@ header {
 p {
     background-color: aqua;
     margin: 10px;
-    width: 200px;
+    width: 500px;
 }
