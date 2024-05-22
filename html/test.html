@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos básicos</title>
+    <link rel="stylesheet" href="../css/test.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Datos básicos</h1>
+        <form action="#">
+            <div class="row">
+                <div class="col">
+                    <label for="tipoAtencion">Tipo de atención:</label><br>
+                    <select id="tipoAtencion" name="tipoAtencion" required>
+                        <option value="">Seleccione</option>
+                        <option value="consultaExterna">Consulta externa</option>
+                        <option value="hospitalizacion">Hospitalización</option>
+                        <option value="procedimiento">Procedimiento</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="fechaActual">Fecha actual:</label><br>
+                    <input type="date" id="fechaActual" name="fechaActual" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="fechaAtencion">Fecha atención:</label><br>
+                    <input type="date" id="fechaAtencion" name="fechaAtencion" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="nombreCompleto">Nombre completo:</label><br>
+                    <input type="text" id="nombreCompleto" name="nombreCompleto" required>
+                </div>
+                <div class="col">
+                    <label for="edad">Edad:</label><br>
+                    <input type="number" id="edad" name="edad" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="identificacion">Identificación:</label><br>
+                    <input type="text" id="identificacion" name="identificacion" required>
+                </div>
+                <div class="col">
+                    <label for="telefono">Teléfono:</label><br>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="eps">EPS:</label><br>
+                    <input type="text" id="eps" name="eps" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="submit">Guardar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

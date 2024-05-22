@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario .form {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 85px);
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.titulo {
+    grid-column: span 3;
+}
+
+.nombre {
+    grid-column: span 2;
+}
+
+/* Atributo de tipo pseudoclase */
+p:before {
+    content: attr(type);
+    display: block;
+    margin: 3px 2px;
+    font-size: 15px;
+}
+

@@ -1,0 +1,59 @@
+.container {
+    display: flex; /* permite q sea manipulable */
+    justify-content: center; /* "center" dependera de lo que necesite */
+    align-items: center; /* relacionado con el anterior */
+}
+
+.calculadora {
+    display: grid; /* elementos en lista a "grila/cuadrícula/malla". Solo los "prepara" */
+    /* grid-template-columns: 75px 75px 75px 75px; */
+    grid-template-columns: repeat(4, 75px);
+    /* grid-template-rows: 150px 75px 75px 75px 75px 75px; */
+    grid-template-rows: 150px repeat(5, 75px);
+    background-color: #211C6A;
+    padding: 15px;
+    border-radius: 15px;
+    /* Sombreado */
+    box-shadow: 15px 10px 5px 5px #00000086;
+}
+
+.display {
+    grid-column: span 4;
+    background-color: #59B4C3;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: right;
+    margin-bottom: 15px;
+    margin: 10px;
+    color: white;
+    box-shadow: 0px 0px 0px 10px #00000086;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+button {
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 32px;
+    border: none;
+    background-color: #EFF396;
+    font-size: 25px;
+    font-family: 'Victor Mono';
+
+    box-shadow: 5px 5px 5px 5px #00000086;
+}
+
+/* Estilo tipo pseudoclase: Para eventos*/
+button:active {
+    background: #74E291;
+}
+
+* {
+    /* color: white; */
+}
+
+body {
+    background-color: gray;
+}

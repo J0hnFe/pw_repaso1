@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="../js/calculadora.js">
+
+    </script>
+
+</head>
+
+<body>
+    <header></header>
+    <nav></nav>
+    <section>
+        <label id="idlabelnum1" for="idnum1">Número 1:</label>
+        <input id="idnum1" type="number">
+        <label id="idlabelnum2" for="idnum2">Número 2:</label>
+        <input id="idnum2" type="number">
+
+        <button onclick="sumar('idnum1', 'idnum2')">Sumar</button>
+        <button onclick="restar('idnum1', 'idnum2')">Restar</button>
+        <button onclick="multiplicar('idnum1', 'idnum2')">Multiplicar</button>
+        <button onclick="dividir('idnum1', 'idnum2')">Dividir</button>
+
+        <label id="idResultado"></label>
+
+    </section>
+    <footer></footer>
+</body>
+
+</html>
