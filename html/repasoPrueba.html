@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso</title>
+    <link rel="stylesheet" href="../css/repasoPrueba.css">
+    <!--defer pa que cargue el script luego del html en si-->
+    <script src="../js/repasoPrueba.js" defer></script>  
+</head>
+
+<body>
+    <header>Descubre el animal</header>
+    <nav></nav>
+    <section>
+        <div class="container">
+            <div class="pantalla">
+                <label id="txtInicial" for="">Descubre el animal correcto</label>
+                <div class="imagen">
+                    <img id="imgInicial" src="/img/cat_shadow.png" alt="No se pudo cargar">
+                </div>
+                <div class="botones">
+                    <button id="btnGato" class="correcto" onclick="verificar(event)">gato</button>
+                    <button id="btnPerro" class="incorrecto" onclick="verificar(event)">perro</button>
+                    <button id="btnBus" class="incorrecto" onclick="verificar(event)">bus</button>
+                    <button id="btnAguila" class="incorrecto" onclick="verificar(event)">águila</button>
+                    <p id="mensaje">texto de prueba</p>
+                    <button id="btnReiniciar" class="reiniciar" onclick="reiniciar()">reiniciar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
